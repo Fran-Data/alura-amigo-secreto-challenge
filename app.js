@@ -14,7 +14,7 @@ let amigos = [];
 
 //AGREGAR AMIGOS
 function agregarNombre () {
-    let inputNombre = document.getElementById("nombre");
+    let inputNombre = document.getElementById("nombreAmigo");
     let nombre = inputNombre.value.trim();
 
     if (nombre === "") {
