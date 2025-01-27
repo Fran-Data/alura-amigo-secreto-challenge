@@ -13,3 +13,16 @@
 let amigos = [];
 
 //AGREGAR AMIGOS
+function agregarNombre () {
+    let inputNombre = document.getElementById("nombre");
+    let nombre = inputNombre.value.trim();
+
+    if (nombre === "") {
+        alert("Por favor, ingrese un nombre válido.");
+        return;
+    }
+
+    amigos.push(nombre);
+    inputNombre.value = "";
+    mostrarLista();
+}
