@@ -28,3 +28,32 @@ function agregarNombre () {
 }
 
 // funcion sortear amigo
+//CHALLENGE AMIGO SECRETO
+
+
+
+function mostrarLista() {
+    const lista = document.getElementById('listaNombres');
+    lista.innerHTML = '';
+
+    nombres.forEach(nombre => {
+        const li = document.createElement('li');
+        li.textContent = nombre;
+        lista.appendChild(li);
+    });
+}
+
+function sortearAmigo() {
+    if (nombres.length === 0) {
+        alert('La lista está vacía. Agregue nombres antes de sortear.');
+        return;
+    }
+
+    const indiceAleatorio = Math.floor(Math.random() * nombres.length);
+    const nombreSorteado = nombres[indiceAleatorio];
+    alert(`El amigo secreto es: ${nombreSorteado}`);
+}
+
+//EVENTOS
+document.getElementById('btnAdicionar').addEventListener('click', adicionarNombre);
+document.getElementById('btnSortear').addEventListener('click', sortearAmigo);
