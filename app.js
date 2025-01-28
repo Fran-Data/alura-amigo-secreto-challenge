@@ -26,3 +26,5 @@ function agregarNombre () {
     inputNombre.value = "";
     mostrarLista();
 }
+
+// funcion sortear amigo
