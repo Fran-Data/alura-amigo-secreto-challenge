@@ -23,6 +23,11 @@ function adicionarNombre() {
         return;
     }
 
+    if (nombres.includes(nombre)) {
+        alert('El nombre ya está en la lista.');
+        return;
+    }
+
     nombres.push(nombre);
     inputNombre.value = '';
     mostrarLista();
@@ -42,14 +47,20 @@ function mostrarLista() {
 
 //FUNCION SORTEAR AMIGO
 function sortearAmigo() {
-    if (nombres.length === 0) {
-        alert('La lista está vacía. Agregue nombres antes de sortear.');
+    if (nombres.length < 2) {
+        alert('Debe haber al menos dos amigos en la lista para realizar el sorteo.');
         return;
     }
 
     const indiceAleatorio = Math.floor(Math.random() * nombres.length);
     const nombreSorteado = nombres[indiceAleatorio];
     alert(`El amigo secreto es: ${nombreSorteado}`);
+    resetearLista();
+}
+
+function resetearLista() {
+    nombres = [];
+    mostrarLista();
 }
 
 //EVENTOS
