@@ -17,7 +17,6 @@ let nombres = [];
 function adicionarNombre() {
     const inputNombre = document.getElementById('nombreAmigo');
     const nombre = inputNombre.value.trim();
-    
 
     if (nombre === '') {
         alert('Por favor, inserte un nombre');
@@ -62,20 +61,7 @@ function sortearAmigo() {
     const resultadoSorteo = document.getElementById('resultadoSorteo');
     resultadoSorteo.innerHTML = `El amigo secreto es: ${nombreSorteado}`;
     resetearLista();
-
-
-    // cancelando esta funcion alert(`El amigo secreto es: ${nombreSorteado}`);
-    
 }
-
-//LIMPIAR RESULTDO DEL SORTEO
-if (document.getElementById("resultado")) {
-    document.getElementById("resultado").textContent = "";
-}
-
-
-
-
 
 //FUNCION RESETEAR LISTA
 function resetearLista() {
@@ -86,3 +72,6 @@ function resetearLista() {
 //EVENTOS
 document.getElementById('btnAdicionar').addEventListener('click', adicionarNombre);
 document.getElementById('btnSortear').addEventListener('click', sortearAmigo);
+
+//FIN DEL RETO  
+// EN MI LOCAL HA FUNCIONADO, SOLO FALTA HACER UN DEPLOYMENT PARA VERIFICAR QUE FUNCIONE EN LA WEB
