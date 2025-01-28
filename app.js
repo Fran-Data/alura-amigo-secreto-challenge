@@ -58,6 +58,7 @@ function sortearAmigo() {
     resetearLista();
 }
 
+//FUNCION RESETEAR LISTA
 function resetearLista() {
     nombres = [];
     mostrarLista();
