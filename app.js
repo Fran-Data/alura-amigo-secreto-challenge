@@ -9,31 +9,28 @@
 //Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
 
 //ARRAY DE AMIGOS
+let nombres = [];
 
-let amigos = [];
+//FUNCIONES
 
-//AGREGAR AMIGOS
-function agregarNombre () {
-    let inputNombre = document.getElementById("nombreAmigo");
-    let nombre = inputNombre.value.trim();
+//FUNCION AGREGAR NOMBRE
+function adicionarNombre() {
+    const inputNombre = document.getElementById('nombreAmigo');
+    const nombre = inputNombre.value.trim();
 
-    if (nombre === "") {
-        alert("Por favor, ingrese un nombre válido.");
+    if (nombre === '') {
+        alert('Por favor, ingrese un nombre válido.');
         return;
     }
 
-    amigos.push(nombre);
-    inputNombre.value = "";
+    nombres.push(nombre);
+    inputNombre.value = '';
     mostrarLista();
 }
 
-// funcion sortear amigo
-//CHALLENGE AMIGO SECRETO
-
-
-
+//FUNCION MOSTRAR LISTA
 function mostrarLista() {
-    const lista = document.getElementById('listaNombres');
+    const lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
 
     nombres.forEach(nombre => {
@@ -43,6 +40,7 @@ function mostrarLista() {
     });
 }
 
+//FUNCION SORTEAR AMIGO
 function sortearAmigo() {
     if (nombres.length === 0) {
         alert('La lista está vacía. Agregue nombres antes de sortear.');
