@@ -17,6 +17,7 @@ let nombres = [];
 function adicionarNombre() {
     const inputNombre = document.getElementById('nombreAmigo');
     const nombre = inputNombre.value.trim();
+    
 
     if (nombre === '') {
         alert('Por favor, inserte un nombre');
@@ -31,6 +32,10 @@ function adicionarNombre() {
     nombres.push(nombre);
     inputNombre.value = '';
     mostrarLista();
+
+    // Limpiar el resultado del sorteo
+    const resultadoSorteo = document.getElementById('resultadoSorteo');
+    resultadoSorteo.innerHTML = '';
 }
 
 //FUNCION MOSTRAR LISTA
@@ -64,8 +69,10 @@ function sortearAmigo() {
 }
 
 //LIMPIAR RESULTDO DEL SORTEO
-const resultadoSorteo = document.getElementById('resultadoSorteo');
-resultadoSorteo.innerHTML = '';
+if (document.getElementById("resultado")) {
+    document.getElementById("resultado").textContent = "";
+}
+
 
 
 
