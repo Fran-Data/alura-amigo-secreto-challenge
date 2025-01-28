@@ -54,8 +54,13 @@ function sortearAmigo() {
 
     const indiceAleatorio = Math.floor(Math.random() * nombres.length);
     const nombreSorteado = nombres[indiceAleatorio];
-    alert(`El amigo secreto es: ${nombreSorteado}`);
+    const resultadoSorteo = document.getElementById('resultadoSorteo');
+    resultadoSorteo.innerHTML = `El amigo secreto es: ${nombreSorteado}`;
     resetearLista();
+
+
+    // cancelando esta funcion alert(`El amigo secreto es: ${nombreSorteado}`);
+    
 }
 
 //FUNCION RESETEAR LISTA
