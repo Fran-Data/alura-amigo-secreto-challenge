@@ -165,7 +165,8 @@ ul {
 /* TEXTO EL AMIGO SORTEADO ES:*/
 .resultado-sorteo {
     color :#05DF05;
-    font-weight: bold;
-    margin-top: 20px;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 24px;
     text-align: center;
 }
