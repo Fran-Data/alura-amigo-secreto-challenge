@@ -19,7 +19,7 @@ function adicionarNombre() {
     const nombre = inputNombre.value.trim();
 
     if (nombre === '') {
-        alert('Por favor, ingrese un nombre válido.');
+        alert('Por favor, inserte un nombre');
         return;
     }
 
@@ -62,6 +62,13 @@ function sortearAmigo() {
     // cancelando esta funcion alert(`El amigo secreto es: ${nombreSorteado}`);
     
 }
+
+//LIMPIAR RESULTDO DEL SORTEO
+const resultadoSorteo = document.getElementById('resultadoSorteo');
+resultadoSorteo.innerHTML = '';
+
+
+
 
 //FUNCION RESETEAR LISTA
 function resetearLista() {
