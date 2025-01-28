@@ -65,4 +65,4 @@ function resetearLista() {
 
 //EVENTOS
 document.getElementById('btnAdicionar').addEventListener('click', adicionarNombre);
-document.getElementById('btnSortear').addEventListener('click', sortearAmigo);9
+document.getElementById('btnSortear').addEventListener('click', sortearAmigo);
