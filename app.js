@@ -75,3 +75,4 @@ document.getElementById('btnSortear').addEventListener('click', sortearAmigo);
 
 //FIN DEL RETO  
 // EN MI LOCAL HA FUNCIONADO, SOLO FALTA HACER UN DEPLOYMENT PARA VERIFICAR QUE FUNCIONE EN LA WEB
+// agregare nuevas funciones y mejorar la interfaz
