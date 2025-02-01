@@ -47,11 +47,17 @@ abre mi pagina = [Fran-Data](https://fran-data.github.io/alura-amigo-secreto-cha
 
 <h2>Estructura del proyecto 📂</h2>
 amigo-secreto/
+
 index.html   =   # Archivo principal de la interfaz
+
 style.css    =   # Estilos CSS para la página
+
 app.js      =    # Lógica de la aplicación en JavaScript
+
 assets/    =     # Carpeta para imágenes y recursos
+
 README.md    =   # Este archivo
+
 
 <h2>Tecnologías utilizadas 💻</h2>
 HTML: Estructura de la página.
