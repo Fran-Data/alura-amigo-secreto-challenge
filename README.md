@@ -41,6 +41,10 @@ Abre el archivo index.html en tu navegador.
 
 ¡Listo! Ya puedes usar la aplicación.
 
+o
+
+abre mi pagina = [Fran-Data](https://fran-data.github.io/alura-amigo-secreto-challenge/ "Deployed en GitHubPages")
+
 <h2>Estructura del proyecto 📂</h2>
 amigo-secreto/
 ├── index.html          # Archivo principal de la interfaz
