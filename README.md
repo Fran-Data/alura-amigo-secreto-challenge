@@ -2,6 +2,7 @@
 ¡Bienvenido al proyecto Amigo Secreto! Esta es una aplicación web sencilla que te permite agregar nombres de amigos, visualizarlos en una lista y sortear un nombre al azar. esto como parte del programa alura oracle one next education
 
 <h2>Características principales🌟</h2>
+
 Agregar nombres: Ingresa el nombre de tus amigos en el campo de texto y agrégalos a la lista.
 
 Validación de entrada: Evita nombres vacíos o duplicados.
@@ -35,6 +36,7 @@ Resetear la lista:
 Si deseas empezar de nuevo, puedes resetear la lista manualmente al agregar un nuevo nombre o recargar la página.
 
 <h2>Instalación y ejecución 🚀</h2>
+
 Clona este repositorio o descarga los archivos.
 
 Abre el archivo index.html en tu navegador.
@@ -60,6 +62,7 @@ README.md    =   # Este archivo
 
 
 <h2>Tecnologías utilizadas 💻</h2>
+
 HTML: Estructura de la página.
 
 CSS: Estilos y diseño.
@@ -81,6 +84,7 @@ RESULTADO DEL SORTEO EN PANTALLA DE COLOR VERDE EN VEZ DE USAR UN ALERT
 AL AGREGAR UN NUEVO NOMBRE SE REINICIA
 
 <h1>Contacto ✉️</h1>
+
 Nombre: Fran Rivera
 
 Email: Data.byJara@gmail.com
